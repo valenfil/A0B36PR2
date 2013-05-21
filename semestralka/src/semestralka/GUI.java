@@ -8,6 +8,6 @@ package semestralka;
  *
  * @author Filip
  */
-public class SimulationCore {
+public class GUI {
     
 }
