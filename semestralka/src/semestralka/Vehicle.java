@@ -24,7 +24,45 @@ class Bus extends Vehicle {
         this.busStart = busStart;
         this.interval = interval;
 
-        jed();
+        
+    }
+    class Rider extends Vehicle{
+        private int stop;
+        private int waitTime;
+        private int timeAtStop;
+        private int busToTake;
+        private int stopGetOff;
+        private int passNum;
+        
+            
+        public Rider(){
+                this.stop = this.waitTime = this.timeAtStop = this.busToTake = this.stopGetOff = 0;
+        }
+        public Rider(int stop, int timeAtStop, int passNum){
+                this.stop = stop;
+                this.waitTime = 0;
+                this.timeAtStop = timeAtStop;
+                this.passNum = passNum;
+    }
+         public int getBus(){return this.busToTake;}
+        
+        public int getStopOff(){return this.stopGetOff;}
+        
+        public int getStop(){return this.stop;}
+        
+        public int getWaitTime(){return this.waitTime;}
+        
+        public int getTimeAtStop(){return this.timeAtStop;}
+        
+        public void setStop(int stop){this.stop = stop;}
+        
+        public void setWaitTime(int waitTime){this.waitTime = waitTime;}
+        
+        public void setTimeAtStop(int timeAtStop){this.timeAtStop = timeAtStop;}
+        
+        public void setBustTake(int busToTake){this.busToTake = busToTake;}
+        
+        public void setStopOff(int stopGetOff){this.stopGetOff = stopGetOff;}
     }
 
     private void jed() {
@@ -72,24 +110,6 @@ class Bus extends Vehicle {
 
     public void setRiders(int riders) {
         this.riders = riders;
-    }
-
-    public double getTimeEscaped() {
-        return currentStop;
-    }
-
-    public void setTimeEscaped(double timeEscaped) {
-        this.currentStop = currentStop;
-    }
-
-    public double getTimeReal() {
-        return time;
-    }
-
-    public void setTimeReal(double timeReal) {
-        this.time = time;
-    }
+    }class Car extends Vehicle {
 }
-
-class Car extends Vehicle {
 }
