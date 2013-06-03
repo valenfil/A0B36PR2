@@ -13,6 +13,7 @@ import java.util.ArrayList;
 public class Test {
 
     private ArrayList<Bus> buses;
+    private ArrayList<Rider> riders;
     private int num_of_busses = 0;
     private int interval;
     private int time = 0;
@@ -21,6 +22,7 @@ public class Test {
 
     public Test(int interval) {
         this.buses = new ArrayList();
+        this.riders = new ArrayList();
         this.interval = interval;
         this.totalBuses = runTest();
     }
@@ -32,7 +34,8 @@ public class Test {
             Bus autobus = new Bus(i, interval);
             autobus.getRiders();
         }
-
+for (int i = 0; i)
+        
         return busId;
     }
 
