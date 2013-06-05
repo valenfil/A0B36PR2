@@ -12,9 +12,8 @@ import java.util.ArrayList;
  */
 public class Stanice {
 
-    private final ArrayList<Vlak> allTrains = new ArrayList<>();
-    private int StopID;
-
+    ArrayList<Stanice> stanice;
+    ArrayList<Cestujici> cestujici;
    
     }
 

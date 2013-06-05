@@ -10,12 +10,13 @@ package semestralka;
  */
 public class Vlak {
 
-    private double currentStop = 1;
+    private double currentStop = 0;
     private double time = 0;
-    private int busStart;
     private int riders = 0;
-    private int interval;
-    private int maximum_riders = 40;
-
+    private int maximum_riders = 300;
+ 
+    public void zpracujUdalost (vlakUdalost){
+        
+        
     }
-   
+}

@@ -9,17 +9,19 @@ package semestralka;
  * @author Filip
  */
 
-    public interface Events {
+    public interface Udalosti {
         
     
 }
- class busEvents implements Events {
+ class vlakUdalost implements Udalosti {
+     int prijezd;
+     int odjezd;
+     int cestijici;
+     
     
 }
 
-class arrivalEvents implements Events{
-    
-}
-class riderEvents implements Events {
+
+class riderEvents implements Udalosti {
     
 }

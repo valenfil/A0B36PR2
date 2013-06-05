@@ -12,31 +12,31 @@ import java.util.ArrayList;
  */
 public class Test {
 
-    private ArrayList<Bus> buses;
-    private ArrayList<Rider> riders;
-    private int num_of_busses = 0;
+    private ArrayList<Vlak> vlaky;
+    private ArrayList<Cestujici> cestujici;
+    private int pocetVlaku = 0;
     private int interval;
     private int time = 0;
     private int maxTime = 1440;
     private int totalBuses = 0;
 
     public Test(int interval) {
-        this.buses = new ArrayList();
-        this.riders = new ArrayList();
+        this.vlaky = new ArrayList();
+        this.cestujici = new ArrayList();
         this.interval = interval;
         this.totalBuses = runTest();
     }
 
     private int runTest() {
-        int busId = 0;
+     int vlakID;
         for (int i = 0; i < maxTime; i += interval) {
-            busId++;
-            Bus autobus = new Bus(i, interval);
-            autobus.getRiders();
+            vlakID++;
+            Vlak vlak = new Vlak(i, interval);
+            vlak.getCesujici();
         }
 for (int i = 0; i)
         
-        return busId;
+        return vlakID;
     }
 
     public int getTotalBuses() {

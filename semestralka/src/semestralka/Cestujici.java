@@ -10,4 +10,5 @@ package semestralka;
  */
 public class Cestujici {
     
+    
 }
